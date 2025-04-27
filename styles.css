@@ -11,7 +11,7 @@ html,body{
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: "Nunito Sans", serif;
+    font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -63,6 +63,7 @@ html,body{
     flex-grow: 1;
 }
 .big-heading {
+    font-family: "Merriweather", serif;
     font-size: 98px;
     font-weight: 400;
     padding: 3px 0px;
@@ -93,6 +94,7 @@ h1 {
     font-weight: 500;
 }
 .titles {
+    font-family: "Merriweather", serif;
     font-size: 75px;
     font-weight: 300;
     padding: 5px 0px;
