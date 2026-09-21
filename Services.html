@@ -3,14 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manakkodam</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <title>Services — Manakkodam</title>
+    <link rel="shortcut icon" href="images/favicon-solid.png" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>services</h1>
+<body class="services-page">
+    <div id="bg-pattern" class="bg-pattern" aria-hidden="true"></div>
+    <div class="container">
+        <div class="navbar">
+            <a href="index.html#hero" class="nav-logo" aria-label="Manakkodam home">
+                <img class="logo" src="images/manakkodam-logo-solid.svg" alt="Manakkodam logo">
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                </svg>
+            </button>
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul id="nav-links">
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#projects">Projects</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="services-content">
+            <header class="services-header">
+                <h1>Services</h1>
+                <p class="services-intro">Manakkodam Manu Medical Research provides methodological support and research infrastructure for clinical trials. Explore our active offerings below.</p>
+            </header>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <span class="service-badge">Active Platform</span>
+                    <h2 class="service-title">SPECTR</h2>
+                    <p class="service-subtitle">Secure Point-of-care Enrollment and Centralized Trial Randomization</p>
+                    <p class="service-description">A free, open-source, GCP-compliant central allocation engine engineered for academic, investigator-initiated, and not-for-profit multicenter randomized controlled trials.</p>
+                    <div class="service-actions">
+                        <a class="service-link service-link-primary" href="https://spectr.mmmr.in" target="_blank" rel="noopener noreferrer">Go to SPECTR</a>
+                        <a class="service-link service-link-secondary" href="mailto:mmmedicalresearch@outlook.com">Request Onboarding</a>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <div class="footer-left-main">
+                    <div class="footer-brand-block">
+                        <img class="footer-logo" src="images/manakkodam-logo-offwhite.svg" alt="Manakkodam Manu Medical Research">
+                    </div>
+                    <div class="footer-address">
+                        <p class="footer-label">Address</p>
+                        <p>Manakkodam Manu Medical Research (OPC) Pvt. Ltd,</p>
+                        <p>Uzhuthummel House, East of Velorvattom Temple, Cherthala PO,</p>
+                        <p>Alappuzha, Kerala, India &ndash; 688524.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-link-item">
+                    <p class="footer-label">WhatsApp Enquiries</p>
+                    <a class="footer-link" href="https://wa.me/9195395222224" target="_blank" rel="noopener noreferrer">95395 22224</a>
+                </div>
+                <div class="footer-link-item">
+                    <p class="footer-label">ORCID Research Profile</p>
+                    <a class="footer-link" href="https://orcid.org/0000-0003-3454-5677" target="_blank" rel="noopener noreferrer">0000-0003-3454-5677</a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-tagline">&copy; Manakkodam Manu Medical Research</p>
+    </footer>
+    <script src="js/particles.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
