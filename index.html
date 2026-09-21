@@ -14,21 +14,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div id="bg-pattern" class="bg-pattern" aria-hidden="true"></div>
     <div class="container">
         <div class="navbar">
-            <div class="nav-logo-links">
-                <img class="logo" src="images/manakkodam-logo-solid.svg" alt="">
-                <nav>
-                    <ul id="nav-links">
-                        <a href="#about">About</a>
-                        <a href="#projects">Projects</a>
-                        <a href="Services.html">Services</a>
-                        <a href="#contact">Contact</a>
-                    </ul>
-                </nav>
-            </div>
-            <!--  -->
-            <img onclick="toggleNav()" class="menu-logo" src="images/menu_24dp_000_FILL0_wght400_GRAD0_opsz24.png" alt="">
+            <a href="#hero" class="nav-logo" aria-label="Manakkodam home">
+                <img class="logo" src="images/manakkodam-logo-solid.svg" alt="Manakkodam logo">
+            </a>
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M3 6h18v2H3V6zm0 5h18v2H3v-2zm0 5h18v2H3v-2z"/>
+                </svg>
+            </button>
+            <nav class="nav-menu" aria-label="Main navigation">
+                <ul id="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
         <section id="hero">
             <div class="hero-div">
@@ -40,12 +44,13 @@
         <section id="about">
             <div class="about-div">
                 <h1 class="titles">About us</h1>
-                <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/b5Xgw_DqmEw?si=ohr0yWOYOpPvhIWO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="float-left"></iframe>
-                <p class="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consequat sed turpis fringilla dignissim. Curabitur ut ligula ac risus faucibus iaculis. Duis non augue id erat cursus aliquet. Ut eget mollis felis. Etiam posuere hendrerit tellus, eu mattis metus lobortis ac. Nam cursus aliquam lorem at posuere. Nunc ultricies facilisis eros, finibus iaculis purus tempus sed. Aenean vel sapien at arcu bibendum venenatis et nec felis. <br>
-                    Phasellus id interdum nunc, et ullamcorper lacus. Nulla auctor mi in faucibus gravida. Maecenas commodo blandit pretium. Nunc id finibus orci, at dapibus lacus. Sed in eros ac lorem volutpat efficitur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec ut commodo nunc, non bibendum arcu. <br>
-                    Duis vitae mauris vitae mi tincidunt ultrices sit amet at tellus. Nulla mollis pretium est et viverra. Donec sollicitudin, nibh in dignissim euismod, purus dolor volutpat massa, non blandit tortor velit eget urna. Nulla eget tempor odio. In id commodo velit. Sed felis tortor, fermentum fermentum lectus a, placerat vehicula dolor. Nullam ac faucibus nibh. Aliquam ut mauris risus. Nunc in lacus id diam maximus pellentesque. Sed tincidunt ultrices dolor, egestas malesuada metus ultrices et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br>
-                    Nulla eget elit fringilla augue luctus suscipit. Pellentesque a urna faucibus, tempor dui vel, tincidunt mauris. Proin consequat ut justo a pulvinar. Pellentesque nisl diam, tincidunt in blandit sit amet, tempor sit amet tortor. Nullam gravida nunc eros, aliquet sodales leo posuere in. Proin tristique nisl eget elit sollicitudin, non elementum lectus egestas. Mauris nec sem a orci tristique ullamcorper. Curabitur eu iaculis nunc, a ullamcorper nisi. Nam dapibus odio ornare laoreet vehicula. Donec volutpat sed mi a vulputate. Pellentesque mollis, lacus pellentesque egestas venenatis, nibh velit sodales sem, pulvinar tincidunt purus lectus vitae quam. Duis a dictum dolor.</p>
+                <div class="about-content">
+                    <figure class="about-image">
+                        <img src="images/profile.jpg" alt="Dr. Manu Pradeep, founder of Manakkodam Manu Medical Research">
+                    </figure>
+                    <p class="subtext">Manakkodam Manu Medical Research was founded to address a critical gap in our healthcare ecosystem: vast volumes of valuable scientific and clinical data generated across India remain unpublished, unanalyzed, and lost to medical science. We exist to unlock this potential by providing the methodological rigor, statistical expertise, and study design required to transform routine clinical observations and institutional data into high-impact, globally recognized evidence.</p>
+                    <p class="subtext">Our founder, Dr. Manu Pradeep (MBBS, MSc, MRCGP [INT.]), is a physician and clinical epidemiologist who combines active community practice with advanced academic research. After completing his core medical training at the Amrita School of Medicine, he earned his Master of Science in Epidemiology from the London School of Hygiene and Tropical Medicine (LSHTM), specializing in clinical trials, study design, and advanced statistical methods. He holds additional postgraduate qualifications in family medicine and pain management.</p>
+                    <p class="subtext">Dr. Pradeep has led and contributed to numerous randomized clinical trials and observational studies across rheumatology, clinical immunology, maternal health, and infectious disease, resulting in over twenty peer-reviewed publications in reputed international journals. Backed by extensive experience as a peer reviewer for leading global medical publications, he established Manakkodam Manu Medical Research to ensure that frontline clinical insights receive the rigorous epidemiological guidance needed to meaningfully advance modern medicine.</p>
                 </div>
                 </div>
         </section>
@@ -53,13 +58,42 @@
             <div class="project-div">
                 <h1 class="titles">Projects</h1>
                 <div class="project-grid">
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
+                    <article class="project-card">
+                        <h3 class="project-title">Tolerability of 4.7Fr versus 6Fr ureteral stents following intracorporeal lithotripsy: a single center, patient- and assessor-blinded randomized controlled trial</h3>
+                        <div class="project-meta">
+                            <p><span class="project-label">Journal</span>World Journal of Urology</p>
+                            <p><span class="project-label">Impact Factor</span>3.3 (Clarivate JCR)</p>
+                            <p><span class="project-label">Year Published</span>2026</p>
+                        </div>
+                        <a class="project-link" href="https://link.springer.com/article/10.1007/s00345-026-06737-y" target="_blank" rel="noopener noreferrer">View Article</a>
+                    </article>
+                    <article class="project-card">
+                        <h3 class="project-title">Prevalence of hypertension and its predictors among adolescent school children in Bikaner, India: a cross-sectional study</h3>
+                        <div class="project-meta">
+                            <p><span class="project-label">Journal</span>International Journal of Adolescent Medicine and Health</p>
+                            <p><span class="project-label">Impact Factor</span>~1.0 &ndash; 1.1 (CiteScore: 4.3)</p>
+                            <p><span class="project-label">Year Published</span>2026</p>
+                        </div>
+                        <a class="project-link" href="https://www.degruyterbrill.com/document/doi/10.1515/ijamh-2025-0157/html" target="_blank" rel="noopener noreferrer">View Article</a>
+                    </article>
+                    <article class="project-card">
+                        <h3 class="project-title">Post-traumatic Patellofemoral Ankylosis treated with Robotic Arm-Assisted Patellofemoral Arthroplasty &ndash; A Case Report</h3>
+                        <div class="project-meta">
+                            <p><span class="project-label">Journal</span>Journal of Orthopaedic Case Reports</p>
+                            <p><span class="project-label">Indexation</span>PubMed</p>
+                            <p><span class="project-label">Year Published</span>2025</p>
+                        </div>
+                        <a class="project-link" href="https://jocr.co.in/wp/wp-content/uploads/47-7447-10.13107jocr.2025.v15.i12.6526-253-257-1.pdf" target="_blank" rel="noopener noreferrer">View Article</a>
+                    </article>
+                    <article class="project-card">
+                        <h3 class="project-title">Bilirubin is not an independent predictor of mortality in patients admitted to intensive care with sepsis &ndash; A prospective, single-center cohort from South India</h3>
+                        <div class="project-meta">
+                            <p><span class="project-label">Journal</span>International Journal of Critical Illness and Injury Science</p>
+                            <p><span class="project-label">Scopus CiteScore</span>1.5</p>
+                            <p><span class="project-label">Year Published</span>2025</p>
+                        </div>
+                        <a class="project-link" href="https://www.ovid.com/jnls/ijci/fulltext/10.4103/ijciis.ijciis_65_25~bilirubin-is-not-an-independent-predictor-of-mortality-in" target="_blank" rel="noopener noreferrer">View Article</a>
+                    </article>
                 </div>
             </div>
         </section>
@@ -79,7 +113,35 @@
             </div>
         </section>
     </div>
-    <div class="footer">hellor</div>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <div class="footer-left-main">
+                    <div class="footer-brand-block">
+                        <img class="footer-logo" src="images/manakkodam-logo-offwhite.svg" alt="Manakkodam Manu Medical Research">
+                    </div>
+                    <div class="footer-address">
+                        <p class="footer-label">Address</p>
+                        <p>Manakkodam Manu Medical Research (OPC) Pvt. Ltd,</p>
+                        <p>Uzhuthummel House, East of Velorvattom Temple, Cherthala PO,</p>
+                        <p>Alappuzha, Kerala, India &ndash; 688524.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-link-item">
+                    <p class="footer-label">WhatsApp Enquiries</p>
+                    <a class="footer-link" href="https://wa.me/91953952224" target="_blank" rel="noopener noreferrer">95395 2224</a>
+                </div>
+                <div class="footer-link-item">
+                    <p class="footer-label">ORCID Research Profile</p>
+                    <a class="footer-link" href="https://orcid.org/0000-0003-3454-5677" target="_blank" rel="noopener noreferrer">0000-0003-3454-5677</a>
+                </div>
+            </div>
+        </div>
+        <p class="footer-tagline">&copy; Manakkodam Manu Medical Research</p>
+    </footer>
+    <script src="js/particles.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
